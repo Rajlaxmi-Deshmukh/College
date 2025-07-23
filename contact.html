@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Greenfield College</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="clg.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="admissions.html">Admission</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <div class="card">
+      <h2>Get in Touch</h2>
+      <form onsubmit="submitForm(event)">
+        <label for="name">Name:<br />
+          <input type="text" id="name" placeholder="Your full name" required />
+        </label><br /><br />
+
+        <label for="email">Email:<br />
+          <input type="email" id="email" placeholder="example@domain.com" required />
+        </label><br /><br />
+
+        <label for="phone">Phone Number:<br />
+          <input type="tel" id="phone" placeholder="+91-XXXXXXXXXX" required />
+        </label><br /><br />
+
+        <label for="course">Course Interested:<br />
+          <input type="text" id="course" placeholder="e.g., B.Sc. Computer Science" required />
+        </label><br /><br />
+
+        <label for="message">Message:<br />
+          <textarea id="message" placeholder="Your message or inquiry..." required></textarea>
+        </label><br /><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>&copy; 2025 Greenfield College. All rights reserved.</footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert('Thank you for contacting us! We will reach out to you soon.');
+      // You can add logic here to actually send the form data to your server or email handler.
+    }
+  </script>
+</body>
+</html>
